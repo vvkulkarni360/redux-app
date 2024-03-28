@@ -1,6 +1,17 @@
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./Navbar";
+import Shop from "./Shop";
+
 function App() {
   return (
-    <div className="App"></div>
+    <>
+      <Router>
+        <Navbar />
+        <div className="container">
+          <Shop />
+        </div>
+      </Router>
+    </>
   );
 }
 
